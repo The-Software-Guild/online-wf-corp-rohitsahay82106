@@ -1,0 +1,13 @@
+AccountNumber,Name,Balance,Type
+11111,Free Customer,100,F
+22222,Basic Customer,500,B
+33333,Premium Customer,1000,P
+12345,Free Customer,500,F
+11456,Free Customer,1000,F
+23222,Basic Customer,5000,B
+22422,Basic Customer,1500,B
+34333,Premium Customer,10000,P
+32333,Premium Customer,120050,P
+31343,Premium Customer,91000.54,P
+
+
