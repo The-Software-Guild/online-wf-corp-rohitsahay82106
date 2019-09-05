@@ -1,9 +1,0 @@
-D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\03-Collections-LINQ-SystemIO-DateTime\Asssessments\LINQ\LINQ\bin\Debug\LINQ.exe.config
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\bin\Debug\Customers.xml
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\bin\Debug\LINQ.exe.config
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\bin\Debug\LINQ.exe
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\bin\Debug\LINQ.pdb
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\obj\Debug\LINQ.csprojAssemblyReference.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\obj\Debug\LINQ.csproj.CoreCompileInputs.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\obj\Debug\LINQ.exe
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\LINQExercise\LINQ\obj\Debug\LINQ.pdb

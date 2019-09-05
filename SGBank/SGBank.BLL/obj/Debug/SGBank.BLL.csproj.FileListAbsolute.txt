@@ -1,0 +1,11 @@
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\bin\Debug\SGBank.BLL.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\bin\Debug\SGBank.BLL.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\bin\Debug\SGBank.Data.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\bin\Debug\SGBank.Models.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\bin\Debug\SGBank.Data.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\bin\Debug\SGBank.Models.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.csprojAssemblyReference.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.csproj.CopyComplete
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.pdb

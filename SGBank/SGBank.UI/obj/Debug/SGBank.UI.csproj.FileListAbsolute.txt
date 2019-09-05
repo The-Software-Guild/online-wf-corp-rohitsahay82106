@@ -1,0 +1,14 @@
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.UI.exe.config
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.UI.exe
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.UI.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.BLL.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.Models.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.Data.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.BLL.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.Models.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\bin\Debug\SGBank.Data.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\obj\Debug\SGBank.UI.csprojAssemblyReference.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\obj\Debug\SGBank.UI.csproj.CoreCompileInputs.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\obj\Debug\SGBank.UI.csproj.CopyComplete
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\obj\Debug\SGBank.UI.exe
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.UI\obj\Debug\SGBank.UI.pdb
