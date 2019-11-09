@@ -1,0 +1,14 @@
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.exe.config
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.exe
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\obj\Debug\FlooringOrderingSystem.UI.csprojAssemblyReference.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\obj\Debug\FlooringOrderingSystem.UI.csproj.CoreCompileInputs.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\obj\Debug\FlooringOrderingSystem.exe
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\obj\Debug\FlooringOrderingSystem.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.BLL.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.Models.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.Data.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.BLL.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.Models.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\bin\Debug\FlooringOrderingSystem.Data.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem\obj\Debug\FlooringOrderingSystem.UI.csproj.CopyComplete

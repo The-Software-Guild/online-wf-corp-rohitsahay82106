@@ -1,0 +1,5 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+2,Mr. David Freelance,OH,6.25,Carpet,231,2.25,2.10,519.75,485.10,62.80,1067.65
+4,Mr. James Harris,MI,5.75,Wood,103,5.15,4.75,530.45,489.25,58.63,1078.33
+5,Samson Enterprise_ Inc.,IN,6.00,Laminate,981,1.75,2.10,1716.75,2060.10,226.61,4003.46
+6,Carpenter Inc. Of Ohio,PA,6.75,Tile,5801,3.50,4.15,20303.50,24074.15,2995.49,47373.14
