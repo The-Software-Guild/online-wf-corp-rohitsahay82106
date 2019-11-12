@@ -11,7 +11,7 @@ namespace FlooringOrderingSystem.Models.Interfaces
     public interface IOrdersInventory
     {
         Order LookUpOrder(DateTime OrderDate, int OrderNumber);
-        DisplayAllOrdersResponse LoadOrder(DateTime OrderDate);
+        List<Order> LoadOrder(DateTime OrderDate);
         SaveOrderResponse SaveOrder(Order Order);
         Response DeleteOrder(Order Order);
 

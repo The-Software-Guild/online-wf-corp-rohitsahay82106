@@ -12,14 +12,14 @@ namespace FlooringOrderingSystem.Data
 {
     public class ProductionOrders: IOrdersInventory
     {
-        private readonly string FolderPath = @"C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\OrdersList";
+        private readonly string FolderPath = @"..\..\..\FlooringOrderingSystem.Data\OrdersList";
 
-        List<Order> orderList = new List<Order>();
+        
 
 
         public Order LookUpOrder(DateTime OrderDate, int OrderNumber)
         {
-            Order order = new Order();
+            Order order = null;
             bool _orderFound = false;
 
             bool OrderFileExists = CheckOrderFileExist(OrderDate, out string filepath);
@@ -33,21 +33,8 @@ namespace FlooringOrderingSystem.Data
                 string line = reader.ReadLine();
                 while (((line = reader.ReadLine()) != null) && (!_orderFound))
                 {
-                    string[] columns = line.Split(',');
-                    order.OrderNumber = int.Parse(columns[0]);
-                    order.OrderDate = OrderDate;
-                    order.CustomerName = AddCommaintheData(columns[1]);
-                    order.State = columns[2];
-                    order.TaxRate = decimal.Parse(columns[3]);
-                    order.ProductType = columns[4];
-                    order.Area = decimal.Parse(columns[5]);
-                    order.CostPerSquareFoot = decimal.Parse(columns[6]);
-                    order.LaborCostPerSquareFoot = decimal.Parse(columns[7]);
-                    order.MaterialCost = decimal.Parse(columns[8]);
-                    order.LaborCost = decimal.Parse(columns[9]);
-                    order.Tax = decimal.Parse(columns[10]);
-                    order.Total = decimal.Parse(columns[11]);
-
+                    order = BuildOrderFromLine(line, OrderDate);
+                                        
                     if (order.OrderNumber == OrderNumber)
                     {
                         _orderFound = true;
@@ -57,8 +44,7 @@ namespace FlooringOrderingSystem.Data
 
             }
 
-
-
+            
             if (_orderFound)
             {
                 return order;
@@ -72,21 +58,15 @@ namespace FlooringOrderingSystem.Data
            
         }
 
-        public DisplayAllOrdersResponse LoadOrder(DateTime OrderDate)
+        public List<Order> LoadOrder(DateTime OrderDate)
         {
-            DisplayAllOrdersResponse response = new DisplayAllOrdersResponse();
-
-            Order order = new Order();
-
-            
+            List<Order> orderList = new List<Order>();
+                        
             bool OrderFileExists = CheckOrderFileExist(OrderDate, out string filepath);
             if (!OrderFileExists)
             {
 
-                response.Success = false;
-                response.Message = "invalid order date";
-                response.Orders = null;
-                return response;
+                return orderList;
 
             }
 
@@ -95,36 +75,15 @@ namespace FlooringOrderingSystem.Data
                 string line = reader.ReadLine();
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string[] columns = line.Split(',');
-                    order.OrderNumber = int.Parse(columns[0]);
-                    order.OrderDate = OrderDate;
-                    order.CustomerName = AddCommaintheData(columns[1]);
-                    order.State = columns[2];
-                    order.TaxRate = decimal.Parse(columns[3]);
-                    order.ProductType = columns[4];
-                    order.Area = decimal.Parse(columns[5]);
-                    order.CostPerSquareFoot = decimal.Parse(columns[6]);
-                    order.LaborCostPerSquareFoot = decimal.Parse(columns[7]);
-                    order.MaterialCost = decimal.Parse(columns[8]);
-                    order.LaborCost = decimal.Parse(columns[9]);
-                    order.Tax = decimal.Parse(columns[10]);
-                    order.Total = decimal.Parse(columns[11]);
-
-
-
+                    Order order = BuildOrderFromLine(line, OrderDate);
                     orderList.Add(order);
-                    order = new Order();
-
-
+                                        
                 }
 
             }
 
-            response.Orders = orderList;
-            response.Success = true;
-            response.Message = "Order Data for the date is available";
-
-            return response;
+            return orderList;
+            
         }
 
         public SaveOrderResponse SaveOrder(Order Order)
@@ -345,6 +304,30 @@ namespace FlooringOrderingSystem.Data
             return output;
         }
 
+        private Order BuildOrderFromLine(string line, DateTime OrderDate)
+        {
+            Order order = new Order();
+
+            string[] columns = line.Split(',');
+            order.OrderNumber = int.Parse(columns[0]);
+            order.OrderDate = OrderDate;
+            order.CustomerName = AddCommaintheData(columns[1]);
+            order.State = columns[2];
+            order.TaxRate = decimal.Parse(columns[3]);
+            order.ProductType = columns[4];
+            order.Area = decimal.Parse(columns[5]);
+            order.CostPerSquareFoot = decimal.Parse(columns[6]);
+            order.LaborCostPerSquareFoot = decimal.Parse(columns[7]);
+            order.MaterialCost = decimal.Parse(columns[8]);
+            order.LaborCost = decimal.Parse(columns[9]);
+            order.Tax = decimal.Parse(columns[10]);
+            order.Total = decimal.Parse(columns[11]);
+
+
+
+            return order;
+
+        }
 
     }
 }

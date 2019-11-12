@@ -21,7 +21,20 @@ namespace FlooringOrderingSystem.BLL
 
         public DisplayAllOrdersResponse Display(DateTime OrderDate)
         {
-            DisplayAllOrdersResponse Response = _ordersInventory.LoadOrder(OrderDate);
+            DisplayAllOrdersResponse Response = new DisplayAllOrdersResponse();
+
+            Response.Orders = _ordersInventory.LoadOrder(OrderDate);
+
+            if(Response.Orders.Count == 0)
+            {
+                Response.Success = false;
+                Response.Message = "Order Date not found";
+            }
+            else
+            {
+                Response.Success = true;
+                Response.Message = "Order Date found";
+            }
 
             
 

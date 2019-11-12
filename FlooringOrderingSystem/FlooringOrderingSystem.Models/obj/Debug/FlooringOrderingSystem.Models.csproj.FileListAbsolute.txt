@@ -3,3 +3,4 @@ C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderi
 C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Models\obj\Debug\FlooringOrderingSystem.Models.csproj.CoreCompileInputs.cache
 C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Models\obj\Debug\FlooringOrderingSystem.Models.dll
 C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Models\obj\Debug\FlooringOrderingSystem.Models.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Models\obj\Debug\FlooringOrderingSystem.Models.csprojAssemblyReference.cache

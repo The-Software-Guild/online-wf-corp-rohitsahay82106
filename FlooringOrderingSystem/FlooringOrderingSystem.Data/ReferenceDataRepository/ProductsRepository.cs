@@ -12,7 +12,7 @@ namespace FlooringOrderingSystem.Data.ReferenceDataRepository
 {
     public class ProductsRepository:IProductsRepository
     {
-        private readonly string path = @"C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\DataFiles\Products.txt";
+        private readonly string path = @"..\..\..\FlooringOrderingSystem.Data\DataFiles\Products.txt";
 
         public ProductLookUpResponse ProductLookup(string ProductType)
         {

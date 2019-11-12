@@ -1,7 +1,7 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
 1,Mr. Rohit Sahay,OH,6.25,Wood,818,5.15,4.75,4212.70,3885.50,506.14,8604.34
 2,Mr. Sanju Samson,IN,6.00,Laminate,877,1.75,2.10,1534.75,1841.70,202.59,3579.04
-3,Mr. Happy Singh,PA,6.75,Wood,8737,5.15,4.75,44995.55,41500.75,5838.50,92334.80
+3,Mr. Happy Singh,PA,6.75,Wood,8342,5.15,4.75,42961.30,39624.50,5574.54,88160.34
 4,Mr. Dhruv Sahay,PA,6.75,Tile,8731,3.50,4.15,30558.50,36233.65,4508.47,71300.62
 5,Mrs. Haripriya Prasad,OH,6.25,Laminate,983,1.75,2.10,1720.25,2064.30,236.53,4021.08
 6,Acme_ Inc.,IN,6.00,Wood,98111,5.15,4.75,505271.65,466027.25,58277.93,1029576.83

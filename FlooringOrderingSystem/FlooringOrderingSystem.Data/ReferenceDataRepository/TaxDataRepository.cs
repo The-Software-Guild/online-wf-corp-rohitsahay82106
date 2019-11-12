@@ -12,7 +12,7 @@ namespace FlooringOrderingSystem.Data.ReferenceDataRepository
 {
     public class TaxDataRepository:ITaxDataRepository
     {
-        private readonly string path = @"C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\DataFiles\Taxes.txt";
+        private readonly string path = @"..\..\..\FlooringOrderingSystem.Data\DataFiles\Taxes.txt";
 
         public StateTaxLookUpResponse TaxRateLookup(string StateAbbreviation)
         {

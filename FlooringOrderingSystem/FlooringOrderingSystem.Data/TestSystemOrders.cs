@@ -52,23 +52,19 @@ namespace FlooringOrderingSystem.Data
 
         }
 
-        public DisplayAllOrdersResponse LoadOrder(DateTime OrderDate)
+        public List<Order> LoadOrder(DateTime OrderDate)
         {
-            DisplayAllOrdersResponse displayAllResponse = new DisplayAllOrdersResponse();
+            List<Order> _orderList = new List<Order>();
 
-            displayAllResponse.Success = false;
-            displayAllResponse.Message = "invalid order date";
             
-
             OrderList.OrderBy(c => c.OrderDate).ThenBy(t => t.OrderNumber);
 
             foreach(Order o in OrderList)
             {
                 if (o.OrderDate == OrderDate)
                 {
-                    displayAllResponse.Orders.Add(o);
-                    displayAllResponse.Success = true;
-                    displayAllResponse.Message = "order date found";
+                    _orderList.Add(o);
+                    
                 }
                 if (o.OrderDate >OrderDate)
                 {
@@ -78,7 +74,7 @@ namespace FlooringOrderingSystem.Data
                
             }
 
-            return displayAllResponse;
+            return _orderList;
         }
 
         public SaveOrderResponse SaveOrder(Order Order)
