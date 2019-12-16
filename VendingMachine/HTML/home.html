@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="text-center">
+            <h1>Vending Machine</h1>
+            <hr style="border:none; border-bottom: 1px solid black;" />
+        </div>
+        <div class="container">
+
+            <ul class="list-group" id="errorMessages"></ul>
+            <div class="row" style="width:auto">
+                <div class="col">
+                    <div class="card-deck" id="itemList">
+                        
+                        <!-- This block represents the HTML code required for each item retrieved from service. This will be built at run time from home.js file
+                        <div class="col-sm-4">
+                            <div class="card" id="card">
+                                <p class="card-header text-left font-weight-bold" id="itemID">1</p>
+                                <div class="card-body">
+                                    <div class="card-title"><p class="text-center">Chocolate #1</p></div>
+                                    <div class="card-text"><p class="text-center">Price : $X.XX</p></div>
+
+                                </div>
+                                    <p class="card-footer text-center"> Quantity Left: X</p>
+                            </div>
+                        </div>
+                      
+						--->
+                    </div>
+                </div>
+				
+                <!--- Place holder for user input -->
+                <div class="col-sm-4">
+				
+					<!--- section for depositing money starts -->
+                    <h5 class="text-center">Total $ In</h5>
+					<div class="form-group row">
+                    	<div class="col-lg">
+                            <input type="text" class="form-control text-center" id="totalDeposit" value="0.00">
+                        </div>
+					</div>
+					
+                    <div class="text-center" style="resize:horizontal">
+                        <button type="button" class="btn btn-default" style="width:130px" id="addDollar">Add Dollar</button>
+                        <button type="button" class="btn btn-default" style="width:130px" id="addQuarter">Add Quarter</button>
+						<p></p>
+                    </div>
+                    <div class="text-center" style="resize:horizontal">
+                        <button type="button" class="btn btn-default" style="width:130px" id="addDime">Add Dime</button>
+                        <button type="button" class="btn btn-default" style="width:130px" id="addNickel">Add Nickel</button>
+                    </div>
+                    <hr style="border:1px solid black;" />
+					<!--- section for depositing money ends -->
+                    
+					
+					<!--- section for trigerring purchase request starts -->
+					<h5 class="text-center">Messages</h5>
+					<div class="form-group row">
+                        
+						<div class="col-lg">
+                            <input type="text" class="form-control text-center" id="Messages" value="">
+                        </div>
+						
+                    </div>
+	
+					<div class="form-group row">
+                        <label for="inputItem" class="col-sm-2 col-form-label">Item: </label>
+                        
+						<div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputItem" placeholder="Item No.">
+                        </div>
+						
+                    </div>
+					
+					<div class="text-center" style="resize:horizontal">
+                        <button type="button" class="btn btn-default" id="make-purchase-button">Make Purchase</button>
+                    </div>
+                    <hr style="border:1px solid black;" />
+					<!--- section for trigerring purchase request ends -->
+					
+				
+                    <!--- section for Change return starts -->
+					<h5 class="text-center">Change</h5>
+										
+					<div class="form-group row">
+                        
+						<div class="col-lg">
+                            <input type="text" class="form-control text-center" id="totalChange" value="">
+                        </div>
+						
+                    </div>
+					
+                    <div class="text-center" style="resize:horizontal">
+                        <button type="button" class="btn btn-default" id="return-change-button">Change Return</button>
+
+                    </div>
+					<!--- section for Change return ends -->
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <!-- #5: Placed at the end of the document so the pages load faster -->
+        <script src="js\jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

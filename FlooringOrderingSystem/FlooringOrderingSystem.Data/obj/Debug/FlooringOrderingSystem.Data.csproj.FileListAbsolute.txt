@@ -1,9 +1,0 @@
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\bin\Debug\FlooringOrderingSystem.Data.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\bin\Debug\FlooringOrderingSystem.Data.pdb
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\bin\Debug\FlooringOrderingSystem.Models.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\bin\Debug\FlooringOrderingSystem.Models.pdb
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\obj\Debug\FlooringOrderingSystem.Data.csprojAssemblyReference.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\obj\Debug\FlooringOrderingSystem.Data.csproj.CoreCompileInputs.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\obj\Debug\FlooringOrderingSystem.Data.csproj.CopyComplete
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\obj\Debug\FlooringOrderingSystem.Data.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\FlooringOrderingSystem\FlooringOrderingSystem.Data\obj\Debug\FlooringOrderingSystem.Data.pdb
