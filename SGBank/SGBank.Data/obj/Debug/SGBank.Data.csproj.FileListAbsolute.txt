@@ -1,9 +1,0 @@
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\bin\Debug\SGBank.Data.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\bin\Debug\SGBank.Data.pdb
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\bin\Debug\SGBank.Models.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\bin\Debug\SGBank.Models.pdb
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\obj\Debug\SGBank.Data.csprojAssemblyReference.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\obj\Debug\SGBank.Data.csproj.CoreCompileInputs.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\obj\Debug\SGBank.Data.csproj.CopyComplete
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\obj\Debug\SGBank.Data.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\SGBank\SGBank.Data\obj\Debug\SGBank.Data.pdb
