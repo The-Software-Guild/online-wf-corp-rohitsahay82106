@@ -1,0 +1,60 @@
+﻿@model Exercises.Models.ViewModels.EditVM
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <br /><br /><br />
+
+            @using (Html.BeginForm("UpdateAddress", "Student", FormMethod.Post))
+            {
+                @Html.HiddenFor(m => m.AddressVM.studentid)
+
+                @Html.HiddenFor(m => m.StudentVM.FirstName)
+                @Html.HiddenFor(m => m.StudentVM.LastName)
+                @Html.HiddenFor(m => m.StudentVM.MajorId)
+                @Html.HiddenFor(m => m.StudentVM.GPA)
+                @Html.HiddenFor(m => m.StudentVM.studentId)
+
+
+
+                <div class="col-xs-12 col-sm-10">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Address Details</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label>Street Address:</label>
+                                @Html.TextBoxFor(m => m.AddressVM.Street1, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.AddressVM.Street1, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label></label>
+                                @Html.TextBoxFor(m => m.AddressVM.Street2, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.AddressVM.Street2, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>City:</label>
+                                @Html.TextBoxFor(m => m.AddressVM.City, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.AddressVM.City, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>State:</label>
+                                @Html.DropDownListFor(m => m.AddressVM.StateAbbrv, Model.AddressVM.StateItems, "-Choose One-", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.AddressVM.StateAbbrv, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label>ZipCode:</label>
+                                @Html.TextBoxFor(m => m.AddressVM.PostalCode, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.AddressVM.PostalCode, "", new { @class = "text-danger" })
+                            </div>
+                            <button class="btn btn-primary">Update Address</button>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
