@@ -1,0 +1,72 @@
+﻿@model Exercises.Models.ViewModels.EditVM
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-3">
+        @Html.Partial("StudentNav")
+    </div>
+    <div class="col-xs-12 col-sm-5">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Edit Student</h3>
+                <div class="row">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @using (Html.BeginForm())
+                    {
+                        @Html.HiddenFor(m => m.StudentVM.studentId)
+
+                        @Html.HiddenFor(m => m.AddressVM.Street1)
+                        @Html.HiddenFor(m => m.AddressVM.Street2)
+                        @Html.HiddenFor(m => m.AddressVM.City)
+                        @Html.HiddenFor(m => m.AddressVM.StateAbbrv)
+                        @Html.HiddenFor(m => m.AddressVM.PostalCode)
+                        @Html.HiddenFor(m => m.AddressVM.studentid)
+                        
+                        <div class="col-xs-12 col-sm-10">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Personal Details</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label>First Name:</label>
+                                        @Html.TextBoxFor(m => m.StudentVM.FirstName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.StudentVM.FirstName, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last Name:</label>
+                                        @Html.TextBoxFor(m => m.StudentVM.LastName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.StudentVM.LastName, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Major:</label>
+                                        @Html.DropDownListFor(m => m.StudentVM.MajorId, Model.StudentVM.MajorItems, "-Choose One-", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.StudentVM.MajorId, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>GPA:</label>
+                                        @Html.TextBoxFor(m => m.StudentVM.GPA, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.StudentVM.GPA, "", new { @class = "text-danger" })
+                                    </div>
+                                    <h4>Courses</h4>
+                                    <div class="form-group">
+                                        @Html.ListBoxFor(m => m.StudentVM.SelectedCourseIds, Model.StudentVM.CourseItems, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.StudentVM.SelectedCourseIds, "", new { @class = "text-danger" })
+                                    </div>
+                                    <button class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        @Html.Partial("AddressPartialView")
+    </div>
+</div>
+
+
