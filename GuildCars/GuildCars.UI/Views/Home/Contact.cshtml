@@ -1,0 +1,79 @@
+﻿@model GuildCars.UI.Models.ContactViewModel
+@{
+    ViewBag.Title = "Contact";
+}
+
+<div class="container">
+    <br />
+    <h2>Contact Us</h2>
+
+    <div class="row">
+        <div class="col-xl-4">
+            @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { id = "ContactForm" }))
+            {
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                    <label><strong>Name</strong></label>
+                    @Html.TextBoxFor(m => m.Inquiries.InquiringEntityName, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label><strong>Email</strong></label>
+                    @Html.TextBoxFor(m => m.Inquiries.InquiringEntityEmail, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label><strong>Phone</strong></label>
+                    @Html.TextBoxFor(m => m.Inquiries.InquiringEntityPhone, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label><strong>Message</strong></label>
+                    @Html.TextBoxFor(m => m.Inquiries.GeneralInquiryMessage, new { @class = "form-control", style = "height:150px" })
+                </div>
+
+                <button class="btn btn-primary">Submit</button>
+            }
+
+        </div>
+
+        <div class="col-xl-8">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.1896157831984!2d-81.7056306848549!3d41.50016557925395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f062a4b4a6e7%3A0xcc22dc558677a627!2sMain%20Ave%2C%20Cleveland%2C%20OH%2044113!5e0!3m2!1sen!2sus!4v1585373537182!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <address>
+                One Main Ave<br />
+                Cleveland, OH 44113<br />
+
+            </address>
+
+            <address>
+                <span>Sales: 216-333-9199</span><br />
+                <span>Service: 216-333-9199</span>
+            </address>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('#ContactForm').validate({
+                rules: {
+                    'Inquiries.InquiringEntityName': {
+                        required: true
+                    },
+                    'Inquiries.GeneralInquiryMessage': {
+                        required: true
+                    },
+                    'Inquiries.InquiringEntityEmail': {
+                        required: function (element) {
+                            return !$('#Inquiries_InquiringEntityPhone').val();
+                        }
+                    },
+                    'Inquiries.InquiringEntityPhone': {
+                        required: function (element) {
+                            return !$('#Inquiries_InquiringEntityEmail').val();
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+}

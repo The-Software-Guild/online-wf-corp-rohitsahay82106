@@ -1,0 +1,52 @@
+﻿@model  GuildCars.UI.Models.InventoryReportsViewModels
+@{
+    ViewBag.Title = "Inventory";
+}
+
+<div class="container">
+    <br />
+    <h2>Inventory Report</h2><br />
+    <h4>New Vehicles</h4>
+            <table class="table-bordered table-striped" style="border:3px solid black" cellpadding="10">
+                <tr style="background-color:lightgray">
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Count</th>
+                    <th>Stock Value</th>
+                </tr>
+                @foreach (var m in Model.newInventory)
+                {
+                    <tr>
+                        <td>@m.VehicleMakeYear</td>
+                        <td>@m.VehicleMakeDesc</td>
+                        <td>@m.VehicleModelDesc</td>
+                        <td>@m.VehicleCount.ToString()</td>
+                        <td>@m.VehicleStockValue.ToString("c")</td>
+                    </tr>
+                }
+
+            </table>
+    <br /><br />
+        <h4>Used Vehicles</h4>
+        <table class="table-bordered table-striped" style="border:3px solid black" cellpadding="10">
+                <tr style="background-color:lightgray">
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Count</th>
+                    <th>Stock Value</th>
+                </tr>
+                @foreach (var m in Model.usedInventory)
+                {
+                    <tr>
+                        <td>@m.VehicleMakeYear</td>
+                        <td>@m.VehicleMakeDesc</td>
+                        <td>@m.VehicleModelDesc</td>
+                        <td>@m.VehicleCount.ToString()</td>
+                        <td>@m.VehicleStockValue.ToString("c")</td>
+                    </tr>
+                }
+
+            </table>
+</div>

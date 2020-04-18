@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GuildCars.UI.Models.UsersViewModel>
+@{
+    ViewBag.Title = "Users";
+}
+
+<div class="container">
+    <br />
+    <h2>Users</h2>
+    
+    @Html.ActionLink("Add a New User", "AddUser", "Admin")
+    <table class="table-bordered table-striped" style="border:3px solid black" cellpadding="10">
+            <tr style="background-color:lightgray">
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th></th>
+            </tr>
+            @foreach (var m in Model)
+            {
+
+                <tr>
+                    <td>@m.UserLastName</td>
+                    <td>@m.UserFirstName</td>
+                    <td>@m.UserEmail</td>
+                    <td>@m.UserRole</td>
+                    <td>@Html.ActionLink("edit", "EditUser", "Admin", new { id = m.UserID }, null)</td>
+                </tr>
+            }
+
+        </table>
+</div>
+
