@@ -1,0 +1,53 @@
+﻿@model GuildCars.UI.Models.EditUserViewModel
+@{
+    ViewBag.Title = "EditUser";
+}
+
+<div class="container">
+    <br />
+    <h2>Edit User</h2>
+    
+    <div class="row">
+        <div class="col-sm-12">
+            @using (Html.BeginForm("EditUser", "Admin", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                @Html.HiddenFor(m => m.UserId);
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label><strong>First Name</strong></label>
+                        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label><strong>Last Name</strong></label>
+                        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label><strong>Email</strong></label>
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="@Model.Email">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label><strong>Role</strong></label>
+                        @Html.DropDownListFor(m => m.RoleName, Model.Roles, new { @class = "form-control col-sm-5" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label><strong>Password</strong></label>
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label><strong>Confirm Password</strong></label>
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                    </div>
+                </div>
+                <button class="btn btn-primary">Save</button>
+            }
+
+        </div>
+
+    </div>
+</div>

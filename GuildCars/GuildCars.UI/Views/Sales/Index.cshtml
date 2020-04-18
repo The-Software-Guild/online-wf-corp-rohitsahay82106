@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container">
+    <br />
+    <h2>Sales</h2>
+    <div class="container" style="border:solid">
+        <br />
+        <form id="searchForm" class="col-sm-12">
+            <h5>Quick Search</h5>
+            <div class="form-inline">
+
+                <input type="text" class="form-control col-sm-4" id="quickSearch" placeholder="Enter make, model or year" />
+
+                <div class="form-inline col-sm-8">
+                    <label class="col-sm-1 justify-content-end"><strong>Price</strong></label>
+                    <input type="number" class="form-control col-2" id="minPrice" placeholder="No Min" />
+                    <input type="number" class="form-control col-2" id="maxPrice" placeholder="No Max" />
+
+                    <label class="col-sm-2 justify-content-end"><strong>Year</strong></label>
+                    <input type="number" class="form-control col-sm-2" id="minYear" placeholder="No Min" />
+                    <input type="number" class="form-control col-sm-2" id="maxYear" placeholder="No Max" />
+                </div>
+
+            </div><br />
+            <div class="form-inline">
+                <div class="col-sm-4">
+                    <label></label>
+                </div>
+                <button type="submit" class="btn btn-primary col-sm-4">Search</button>
+            </div>
+
+        </form>
+        <br />
+    </div>
+    <br />
+    <div id="searchResults">
+    </div>
+</div>
+
+    @section Scripts
+{
+        <script>
+        $(document).ready(function () {
+
+            $("#searchForm").submit(function (e) {
+                search();
+                return false;
+
+            });
+        });
+
+        function search() {
+            $('#searchResults').empty();
+            var imagePath = '@Url.Content("~/Images/")';
+            var detailsPath = '@Url.Action("Purchase","Sales")/';
+            var params;
+            params = 'minPrice=' + $('#minPrice').val() + '&maxPrice=' + $('#maxPrice').val() +
+                '&minYear=' + $('#minYear').val() + '&maxYear=' + $('#maxYear').val() +
+                '&quickSearch=' + $('#quickSearch').val() + '&type=All';
+
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:57886/api/Inventory/search?' + params,
+                success: function (results) {
+                    var row = '<h4>Search Results</h4>';
+                    $('#searchResults').append(row.toString());
+                    $.each(results, function (index, vehicles) {
+                        var row = '<div class="card" id="card">' + '<div class="card-body">' + '<div class="row">' + '<div class="col-sm-2">';
+                        row += '<p class="card-text text-left"><strong>' + vehicles.VehicleMakeYear + ' ' + vehicles.VehicleMakeDesc + ' ' + vehicles.VehicleModelDesc + '</strong>';
+
+                        row += '<img class="card-img-top" src="' + imagePath + vehicles.VehicleImageFileName + '"/> </div>';
+                        row += '<div class="col-sm-10"><div class="row">';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">Body Style:</text><text>';
+                        row += vehicles.VehicleBodyTypeDesc + '</text></div>';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">Interior:</text><text>';
+                        row += vehicles.VehicleInteriorColorDesc + '</text></div>';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">Sale Price:</text><text>';
+                        row += vehicles.VehicleSalePrice + '</text></div>';
+                        row += '</div><div class="row">';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">Trans:</text><text>';
+                        row += vehicles.VehicleTransmissionTypeDesc + '</text></div>';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">Mileage:</text><text>';
+                        row += vehicles.VehicleMileage + '</text></div>';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">MSRP:</text><text>';
+                        row += vehicles.VehicleMSRP + '</text></div>';
+                        row += '</div><div class="row">';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">Color:</text><text>';
+                        row += vehicles.VehicleExteriorColorDesc + '</text></div>';
+                        row += '<div class="card-text text-sm-right col-sm-4"><text class="font-weight-bold">Vin#:</text><text>';
+                        row += vehicles.VehicleVinNumber + '</text></div>';
+                        row += '<div class="card-text text-sm-right col-sm-4"><a href="' + detailsPath + vehicles.VehicleID + '" class="btn btn-primary">Purchase</a></div>';
+                        row += '</div></div></div></div></div>'
+
+                        $('#searchResults').append(row.toString());
+
+                    });
+                },
+                error: function () {
+                    alert('Error performing search, try again later...')
+                }
+            });
+
+        }
+
+        </script>
+
+
+    }
