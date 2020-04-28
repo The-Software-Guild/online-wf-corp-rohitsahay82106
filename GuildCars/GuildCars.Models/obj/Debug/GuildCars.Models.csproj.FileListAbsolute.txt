@@ -1,6 +1,0 @@
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\GuildCars\GuildCars.Models\bin\Debug\GuildCars.Models.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\GuildCars\GuildCars.Models\bin\Debug\GuildCars.Models.pdb
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\GuildCars\GuildCars.Models\obj\Debug\GuildCars.Models.csprojAssemblyReference.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\GuildCars\GuildCars.Models\obj\Debug\GuildCars.Models.csproj.CoreCompileInputs.cache
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\GuildCars\GuildCars.Models\obj\Debug\GuildCars.Models.dll
-C:\Users\Rohit\Desktop\SoftwareGuild\Repos\GuildCars\GuildCars.Models\obj\Debug\GuildCars.Models.pdb
