@@ -1,0 +1,10 @@
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\bin\Debug\DVD.Data.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\bin\Debug\DVD.Data.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\bin\Debug\DVD.Models.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\bin\Debug\DVD.Models.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\obj\Debug\DVD.Data.csprojAssemblyReference.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\obj\Debug\DVD.Data.csproj.CoreCompileInputs.cache
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\obj\Debug\DVD.Data.csproj.CopyComplete
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\obj\Debug\DVD.Data.dll
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\obj\Debug\DVD.Data.pdb
+C:\Users\Rohit\Desktop\SoftwareGuild\Repos\DVD_Catalogue\DVD.Data\bin\Debug\DVD.Data.dll.config
